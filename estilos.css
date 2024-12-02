@@ -586,3 +586,160 @@ footer {
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
+
+
+/* Contenedor del horario */
+
+
+/* Contenedor del horario */
+#horario-contenedor {
+  position: absolute;
+  width: 30%;
+  top: 58%;
+  left: 0%;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+  transition: transform 0.5s ease;
+}
+
+/* Estilo de la card del horario */
+.horario-card {
+  margin-left: 12%;
+  background-color: #eeeee4;
+  color: #000000;
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.horario-card h3 {
+  margin: 0 0 10px 0;
+  color: #f19a2c;
+}
+
+.horario-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.horario-card li {
+  margin-bottom: 5px;
+}
+
+/* Botón de despliegue */
+.toggle-horario-boton {
+  
+  background-color: #f19a2c;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  position: absolute;
+  top:65%;
+  left: 0%;
+  z-index: 1001; /* Asegura que el botón esté por encima */
+}
+
+.toggle-horario-boton:hover {
+  background-color: #ce3b8e;
+}
+
+/* Estados abierto y cerrado */
+.horario-cerrado {
+  transform: translateX(-100%);
+}
+
+.horario-abierto {
+  transform: translateX(0);
+}
+
+.horario-abierto .horario-card {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+
+/* Contenedor del horario */
+#map-contenedor {
+  position: absolute;
+  top: 83%;
+  left: 0%;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+  transition: transform 0.5s ease;
+}
+
+/* Estilo de la card del horario */
+.map-card {
+  margin-left: 20%;
+  background-color: #eeeee4;
+  color: #fff;
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.map-card h3 {
+  margin: 0 0 10px 0;
+  color: #f19a2c;
+}
+
+.map-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.map-card li {
+  margin-bottom: 5px;
+}
+
+/* Botón de despliegue */
+.toggle-map-boton {
+  
+  background-color: #f19a2c;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  position: absolute;
+  top:105%;
+  left: 0%;
+  z-index: 1001;
+
+}
+
+.toggle-map-boton:hover {
+  background-color: #ce3b8e;
+}
+
+/* Estados abierto y cerrado */
+.map-cerrado {
+  transform: translateX(-100%);
+}
+
+.map-abierto {
+  transform: translateX(0);
+}
+
+.map-abierto .map-card {
+  opacity: 1;
+  visibility: visible;
+}
